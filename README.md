@@ -42,7 +42,7 @@ BlackCloud utilizes modern Python packaging standards (pyproject.toml). It will 
 
 ```bash
 # 1. Clone the repository
-git clone <YOUR_GITHUB_REPOSITORY_URL>
+git clone https://github.com/jakeloai/BlackCloud
 
 # 2. Navigate into the directory
 cd blackcloud
