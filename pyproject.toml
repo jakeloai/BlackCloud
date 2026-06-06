@@ -1,0 +1,26 @@
+[project]
+name = "backcloud"
+version = "0.8"
+description = "Multi-cloud OSINT tool. Enumerate public resources in AWS, Azure, and Google Cloud (Formerly cloud_enum)."
+requires-python = ">=3.10"
+dependencies = [
+    "dnspython>=2.8.0",
+    "requests>=2.34.2",
+    "requests-futures>=1.0.2",
+]
+
+[project.scripts]
+backcloud = "backcloud:main"
+
+[dependency-groups]
+dev = [
+    "pytest",
+]
+
+[tool.setuptools]
+py-modules = ["backcloud"]
+packages = ["enum_tools"]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
